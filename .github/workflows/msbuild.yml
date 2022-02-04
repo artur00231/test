@@ -35,4 +35,4 @@ jobs:
       
     - name: Test
       working-directory: ${{env.GITHUB_WORKSPACE}}
-      run: pwd
+      run: cd x64\Release && ls
