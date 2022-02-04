@@ -35,4 +35,4 @@ jobs:
       
     - name: Test
       working-directory: ${{env.GITHUB_WORKSPACE}}
-      run: cd x64\Release && .\ByteCommunicationTest.exe
+      run: cd x64 && .\Release\ByteCommunicationTest.exe
