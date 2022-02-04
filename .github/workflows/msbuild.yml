@@ -35,4 +35,4 @@ jobs:
       
     - name: Test
       working-directory: ${{env.GITHUB_WORKSPACE}}
-      run: ${{env.GITHUB_WORKSPACE}}\x64\Debug\ByteCommunicationTest.exe
+      run: pwd
