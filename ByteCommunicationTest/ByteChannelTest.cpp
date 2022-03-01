@@ -13,10 +13,10 @@ TEST(ByteChannel, BasicCommunication1)
 
 	reader.putByte('\10', ByteChannel::IOPoint::P2);
 
-	EXPECT_TRUE(reader.isAvaiable(ByteChannel::IOPoint::P1));
-	EXPECT_EQ('\10', reader.getByte(ByteChannel::IOPoint::P1));
 	EXPECT_FALSE(reader.isAvaiable(ByteChannel::IOPoint::P1));
-	EXPECT_TRUE(reader.isAvaiable(ByteChannel::IOPoint::P2));
+	EXPECT_EQ('\10', reader.getByte(ByteChannel::IOPoint::P1));
+	EXPECT_TRUE(reader.isAvaiable(ByteChannel::IOPoint::P1));
+	EXPECT_FALSE(reader.isAvaiable(ByteChannel::IOPoint::P2));
 }
 
 TEST(ByteChannel, BasicCommunication2)

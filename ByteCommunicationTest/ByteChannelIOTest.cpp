@@ -12,6 +12,8 @@ TEST(ByteChannelIO, BasicCommunication1)
 	EXPECT_FALSE(bIO1.isAvaiable());
 	EXPECT_FALSE(bIO2.isAvaiable());
 
+	this shoudn't be here!!
+
 	bIO1.write('\10');
 
 	EXPECT_FALSE(bIO1.isAvaiable());
